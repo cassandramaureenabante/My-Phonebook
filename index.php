@@ -105,7 +105,7 @@
 								<td><?php echo $row[4] ?></td>
 								<!-- <td> <a class="btn btn-info" href="view-contact.php?id=<?php echo $row[0] ?>">View </a> </td> -->
 								<td> <a class="btn btn-warning" href="">Update </a> </td>
-								<td> <a class="btn btn-danger" href="">Delete</a> </td>
+								<td> <a class="btn btn-danger" href="delete-contact.php?id=<?php echo $row[0];  ?>">Delete</a> </td>
 							</tr>
 								
 
