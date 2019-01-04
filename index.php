@@ -2,6 +2,9 @@
 	//start the session
 	session_start();
 
+	// include db configuration
+	include('include/db_connect.php');
+
 	// user's information
 	$member_id = $_SESSION['id'];
 	$member_name = $_SESSION['name'];
@@ -71,6 +74,19 @@
 				<div class="col-sm-8 col-sm-offset-2">
 					<table class="table table-striped table-inverse table-responsive">
 						<thead class="thead-inverse">
+							<tr>
+							
+							<?php
+								$sql = "SELECT contacts_id as ID, first_name as 'First Name', last_name as 'Last Name', cellphone_number as 'Phone Number', city as City from contacts";
+								if( $fields = mysqli_query($conn,$sql) ){
+									while( $fieldinfo = mysqli_fetch_field($fields) ){
+										echo "<th>$fieldinfo->name</th>";
+									}
+									//Free result set
+									mysqli_free_result($fields);
+								}
+							?>	
+							</tr>
 							<tr>
 
 								<!-- fields here -->
