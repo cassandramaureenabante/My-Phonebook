@@ -44,9 +44,9 @@ if(isset($_POST['submit'])){
         <h1>Login Here</h1>
             <form action="" method="post">
             <p>Email</p>
-            <input type="text" name="email" placeholder="Enter Email">
+            <input type="text" name="email" placeholder="Enter Email" required>
             <p>Password</p>
-            <input type="password" name="password" placeholder="Enter Password">
+            <input type="password" name="password" placeholder="Enter Password" required>
             <input type="submit" name="submit" value="Login">
             <a href="signup.php">Create an account</a>    
             </form>
