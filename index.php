@@ -1,3 +1,17 @@
+<?php
+	//start the session
+	session_start();
+
+	// include db configuration
+	include('include/db_connect.php');
+
+	// user's information
+	$member_id = $_SESSION['id'];
+	$member_name = $_SESSION['name'];
+	
+
+?>
+
 
 
 
@@ -72,18 +86,36 @@
 									mysqli_free_result($fields);
 								}
 							?>	
+								<th class="text-center" colspan="3">Operation</th>
 							</tr>
+						</thead>
+						
+
+						<!-- data here -->
+						<tbody>
+							<?php 
+							$sql = "select * from contacts where member_id = ". $member_id;
+							$result = mysqli_query($conn, $sql);
+							while ($row = mysqli_fetch_array($result)) { ?>
 							<tr>
-
-								<!-- fields here -->
-								<th>asdf</th>
-								<th>asdf</th>
-								<th>asdfasd</th>
+								<td><?php echo $row[0] ?></td>
+								<td><?php echo $row[1] ?></td>
+								<td><?php echo $row[2] ?></td>
+								<td><?php echo $row[3] ?></td>
+								<td><?php echo $row[4] ?></td>
+								<!-- <td> <a class="btn btn-info" href="view-contact.php?id=<?php echo $row[0] ?>">View </a> </td> -->
+								<td> <a class="btn btn-warning" href="">Update </a> </td>
+								<td> <a class="btn btn-danger" href="">Delete</a> </td>
 							</tr>
-							</thead>
+								
 
-							<!-- data here -->
-							<tbody>
+							<?php
+							}
+							
+							?>
+						</tbody>
+
+				
 								<tr>
 									<td scope="row"></td>
 									<td></td>
