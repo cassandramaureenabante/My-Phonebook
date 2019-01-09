@@ -1,0 +1,179 @@
+body{
+
+}
+
+.background{
+	background:url(background1.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	margin:0;
+	padding:0;
+	font-family:Arial;	
+}
+
+
+.login-box{
+    width: 320px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+	
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+
+nav{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:100px;
+	padding:10px 90px;
+	box-sizing: border-box;
+	background:rgba(0,0,0,0.5);
+	
+}
+
+nav .logo{
+	padding:22px 20px;
+	height:80px;
+	float:left;
+	font-size:24px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#fff;
+
+}
+
+nav ul{
+	list-style:none;
+	float:right;
+	margin:0;
+	padding:0;
+	display:flex;
+	
+}
+
+nav ul li a{
+	line-height:80px;
+	color:#fff;
+	padding:12px 30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:15px;
+	font-weight:bold;
+}
+nav ul li a:hover{
+	background:rgba(0,0,0,0.7);
+	border-radius:6px;
+}
+nav ul li a hover{
+	background:#e2472f;
+	color:#fff;
+	border-radius:6px;
+}
+section{
+	width:100%;
+	height:1000vh;
+	background:url('minimal.png');
+	background-size:cover;
+	background-position:fixed;
+	
+
+}
+h1{
+	margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.img{
+	position: center;
+	margin-left: 25px;
+	border-radius: 50%;
+
+	
+}
+
+.login-box{
+    width: 320px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+	
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+

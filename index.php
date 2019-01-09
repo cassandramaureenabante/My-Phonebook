@@ -35,9 +35,9 @@
 		<link rel = "stylesheet" href = "font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 		<script src="bootstrap-3.3.7/js/jquery.min.js"></script>
         <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
-        <link href="bootstrap-3.3.7/images/mylogo.png"rel=icon> 
+        <link href="bootstrap-3.3.7/images/logo.png"rel=icon>
 </head>
-<body style="background-image:url('bootstrap-3.3.7/images/office.jpg'); background-size:cover; background-repeat:no-repeat;">
+<body  style="background-image:url('bootstrap-3.3.7/images/whitebackground.jpg'); background-size:cover; background-repeat:no-repeat;">
 	<div class="background">
     <nav class="container-fluid">
         <div class="navbar-header">
@@ -104,7 +104,7 @@
 								<td><?php echo $row[3] ?></td>
 								<td><?php echo $row[4] ?></td>
 								<!-- <td> <a class="btn btn-info" href="view-contact.php?id=<?php echo $row[0] ?>">View </a> </td> -->
-								<td> <a class="btn btn-warning" href="">Update </a> </td>
+								<td> <a class="btn btn-warning" href="update_contact.php?id=<?php echo $row[0]; ?>">Update </a> </td>
 								<td> <a class="btn btn-danger" href="delete-contact.php?id=<?php echo $row[0];  ?>">Delete</a> </td>
 							</tr>
 								
