@@ -70,7 +70,11 @@
         <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
         <link href="bootstrap-3.3.7/images/mylogo.png"rel=icon> 
 </head>
+<<<<<<< HEAD
 <body style="background-image:url('bootstrap-3.3.7/images/whitebackground.jpg'); background-size:cover; background-repeat:no-repeat;">
+=======
+<body style="background-image:url('bootstrap-3.3.7/images/office.jpg'); background-size:cover; background-repeat:no-repeat;">
+>>>>>>> e758ba717ace416172f4247962465883fcbaa8a2
 	<div class="background">
     <nav class="container-fluid">
         <div class="navbar-header">
