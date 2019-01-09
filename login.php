@@ -37,7 +37,7 @@ if(isset($_POST['submit'])){
         <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 		<script src='js/phonebook.js'></script>
 </head>
-<body style="background-image:url('bootstrap-3.3.7/images/minimal.png'); background-size:cover; background-repeat:no-repeat;">  
+<body  style="background-image:url('bootstrap-3.3.7/images/whitebackground.jpg'); background-size:cover; background-repeat:no-repeat;">  
 	<div class="container-fluid bg">
     <div class="login-box">
     <img src="bootstrap-3.3.7/images/logo.png" class="avatar">
